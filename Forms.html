@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms (formularios)</title>)
+</head>
+<body>
+
+    <h1>Digite seu endereço</h1>
+                                <!-- OPÇÃO A BAIXO AVISA/ INFORMA QUE ESTA INDO OU ENVIAR UM ARQUIVO JUNTO AO FORMULARIO-->
+    <form action="" method="get" enctype="multipart/form-data"> <!-- Metodo get forma de comunicação aberta via URL-->
+
+        <label for="">
+            Rua:
+        <input type="text" name="rua" autocomplete="street-address">
+        </label>
+
+        <label for="">
+            numero:
+        <input type="number" name="numero" autocomplete="on">
+        </label>
+
+        <label for="">
+            email:
+        <input type="email" name="email" autocomplete="email">
+        </label>
+
+        <button type="submit">Enviar Dados</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <form action="" method="post"> <!-- Metodo get forma de comunicação fechada-->
+
+        <label for="">
+            Birro:
+        <input type="text" name="bairro" autocomplete="address-level2">
+        </label>
+
+        <label for="">
+            Municipio:
+        <input type="text" name="municipio" autocomplete="address-level2">
+        </label>
+
+        <button type="submit">Enviar Dados</button>
+
+    </form>
+    
+</body>
+</html>
